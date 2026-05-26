@@ -104,7 +104,7 @@ export function Nav() {
 export function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/6500000000"
+      href="https://wa.me/+6588539455"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-40 group"
@@ -122,7 +122,7 @@ export function MobileStickyCTA() {
   return (
     <div className="md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-border bg-background/95 backdrop-blur-lg px-4 py-3 flex gap-2">
       <a
-        href="https://wa.me/6500000000"
+        href="https://wa.me/+6588539455"
         className="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-sage/60 bg-sage/10 px-4 py-3 text-sm font-medium text-sage-foreground"
       >
         <MessageCircle size={16} /> WhatsApp

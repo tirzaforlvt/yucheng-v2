@@ -11,7 +11,7 @@ const cols = [
     { href: "#tips", label: "Recommendations" },
     { href: "#store", label: "Store" },
     { href: "#contact", label: "Contact" },
-    { href: "https://wa.me/6500000000", label: "WhatsApp" },
+    { href: "https://wa.me/+6588539455", label: "WhatsApp" },
   ]},
 ];
 
@@ -35,7 +35,7 @@ export function Footer() {
               contemporary homes, offices, and property decisions in Singapore.
             </p>
             <a
-              href="https://wa.me/6500000000"
+              href="https://wa.me/+6588539455"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-sage text-sage-foreground px-5 py-3 text-sm font-medium hover:opacity-90 transition-opacity"
             >
               <MessageCircle size={16} /> Chat on WhatsApp
@@ -60,11 +60,15 @@ export function Footer() {
           <div className="lg:col-span-3">
             <p className="text-xs uppercase tracking-[0.22em] text-background/50">Connect</p>
             <div className="mt-5 flex gap-3">
-              {[MessageCircle, Instagram, Facebook].map((Icon, i) => (
-                <a key={i} href="#" className="grid h-10 w-10 place-items-center rounded-full border border-background/20 hover:bg-background hover:text-foreground transition-colors">
-                  <Icon size={16} />
-                </a>
-              ))}
+              <a href="https://wa.me/+6588539455" className="grid h-10 w-10 place-items-center rounded-full border border-background/20 hover:bg-background hover:text-foreground transition-colors">
+                <MessageCircle size={16} />
+              </a>
+              <a href="https://www.instagram.com/yuchengfengshui" className="grid h-10 w-10 place-items-center rounded-full border border-background/20 hover:bg-background hover:text-foreground transition-colors">
+                <Instagram size={16} />
+              </a>
+              <a href="https://www.facebook.com/yuchengfengshui" className="grid h-10 w-10 place-items-center rounded-full border border-background/20 hover:bg-background hover:text-foreground transition-colors">
+                <Facebook size={16} />
+              </a>
             </div>
             <p className="mt-6 text-xs text-background/60 leading-relaxed">
               By appointment only.<br />

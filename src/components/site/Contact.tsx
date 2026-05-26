@@ -48,13 +48,13 @@ export function Contact() {
             </div>
 
             <div className="mt-10 flex gap-3">
-              <a href="https://wa.me/6500000000" className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-sage hover:text-sage-foreground transition-colors">
+              <a href="https://wa.me/+6588539455" className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-sage hover:text-sage-foreground transition-colors">
                 <MessageCircle size={16} />
               </a>
-              <a href="https://instagram.com" className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-brand hover:text-brand transition-colors">
+              <a href="https://www.instagram.com/yuchengfengshui" className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-brand hover:text-brand transition-colors">
                 <Instagram size={16} />
               </a>
-              <a href="https://facebook.com" className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-brand hover:text-brand transition-colors">
+              <a href="https://www.facebook.com/yuchengfengshui" className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-brand hover:text-brand transition-colors">
                 <Facebook size={16} />
               </a>
             </div>
