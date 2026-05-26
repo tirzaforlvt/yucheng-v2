@@ -35,13 +35,13 @@ export function Store() {
           </div>
           <div className="lg:col-span-5 flex flex-wrap gap-3">
             <a
-              href="https://wa.me/6500000000"
+              href="https://wa.me/+6588539455"
               className="inline-flex items-center gap-2 rounded-full bg-sage text-sage-foreground px-5 py-3 text-sm font-medium hover:opacity-90 transition-opacity"
             >
               <MessageCircle size={16} /> Shop via WhatsApp
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/yuchengfengshui"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-5 py-3 text-sm font-medium text-foreground hover:border-brand transition-colors"
             >
               <Instagram size={16} /> View Instagram
@@ -60,7 +60,7 @@ export function Store() {
               <div className="mt-6 flex items-center justify-between border-t border-border pt-5">
                 <span className="font-display text-2xl font-bold text-foreground">{p.price}</span>
                 <a
-                  href="https://wa.me/6500000000"
+                  href="https://wa.me/+6588539455"
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-brand"
                 >
                   Order →

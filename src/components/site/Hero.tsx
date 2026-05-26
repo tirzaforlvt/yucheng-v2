@@ -45,7 +45,7 @@ export function Hero() {
                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
               </a>
               <a
-                href="https://wa.me/6500000000"
+                href="https://wa.me/+6588539455"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-7 py-3.5 text-sm font-medium text-foreground transition-all hover:border-sage hover:text-sage-foreground"
