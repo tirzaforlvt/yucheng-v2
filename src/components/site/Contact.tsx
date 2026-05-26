@@ -30,7 +30,7 @@ export function Contact() {
 
             <div className="mt-10 space-y-4">
               {[
-                { icon: MessageCircle, label: "WhatsApp", value: "+65 0000 0000" },
+                { icon: MessageCircle, label: "WhatsApp", value: "+65 8853 9455" },
                 { icon: Mail, label: "Email", value: "hello@yuchengfengshui.sg" },
                 { icon: MapPin, label: "Studio", value: "By appointment · Singapore" },
                 { icon: Clock, label: "Response", value: "Within 24 hours, weekdays" },
