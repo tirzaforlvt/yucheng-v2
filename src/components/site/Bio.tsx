@@ -34,19 +34,18 @@ export function Bio() {
           <div className="lg:col-span-7">
             <p className="text-xs uppercase tracking-[0.22em] text-brand">— Meet Yu Cheng</p>
             <h2 className="mt-4 font-display font-bold text-foreground text-4xl lg:text-5xl leading-tight">
-              Authentic lineage,<br />
-              <span className="italic font-light text-muted-foreground">contemporary judgement.</span>
+              The science of your space,<br />
+              <span className="italic font-light text-muted-foreground">without the superstition.</span>
             </h2>
             <div className="mt-8 space-y-5 text-muted-foreground text-base lg:text-lg leading-relaxed max-w-2xl">
               <p>
-                Yu Cheng combines authentic Feng Shui lineage with modern-day practicality —
-                helping clients navigate property decisions, home planning, and spatial harmony
-                in a way that fits contemporary Singaporean lifestyles.
+                Master Yu Cheng is a Singapore-based Feng Shui practitioner with over 15 years of professional experience, specialising in residential and commercial spatial planning, home selection, and Period 9 energy analysis.
               </p>
               <p>
-                Trained under a Hong Kong grandmaster and refined through 15+ years of residential
-                and commercial advisory, his methodology is deliberately calm: no ornaments, no
-                renovations, no superstition. Only what works for the space, the period, and the people.
+                His path into the discipline began with a costly and disillusioning encounter with mainstream practice — an experience that drove him to seek out the classical source. He spent four to five years travelling regularly to Taiwan to study under formal instruction, developing a rigorous, unconventional mastery of Flying Stars that sets his work apart from what is commonly taught.
+              </p>
+              <p>
+                Alongside that technical foundation, Yu Cheng brings a rare sensitivity to spatial energy — the ability to perceive, in physical space, the precise energetic qualities that classical Feng Shui describes in theory. No ornaments. No renovation. No deflection. Just fifteen years of work grounded in the real thing.
               </p>
             </div>
 
