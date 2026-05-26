@@ -1,4 +1,5 @@
 import { MessageCircle, Instagram, Facebook } from "lucide-react";
+import logo from "@/assets/yc-logo.png";
 
 const cols = [
   { title: "Navigate", links: [
@@ -21,10 +22,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
-            <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-md bg-background text-foreground font-display font-bold">
-                玉
-              </span>
+            <div className="flex items-center gap-4">
+              <img src={logo} alt="Yu Cheng Feng Shui" className="h-14 w-14 rounded-md object-contain" />
               <div>
                 <p className="font-display text-xl font-bold">Yu Cheng Feng Shui</p>
                 <p className="text-xs uppercase tracking-[0.22em] text-background/60">玉成风水 · Singapore</p>
