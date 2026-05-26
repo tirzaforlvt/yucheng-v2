@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logo from "@/assets/yc-logo.png";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -31,18 +32,12 @@ export function Nav() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-        <a href="#home" className="flex items-center gap-3">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-brand text-brand-foreground font-display font-bold">
-            玉
-          </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-display text-lg font-bold tracking-tight text-foreground">
-              Yu Cheng
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-              Feng Shui
-            </span>
-          </span>
+        <a href="#home" className="flex items-center" aria-label="Yu Cheng Feng Shui">
+          <img
+            src={logo}
+            alt="Yu Cheng Feng Shui"
+            className="h-12 w-12 rounded-md object-contain"
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
