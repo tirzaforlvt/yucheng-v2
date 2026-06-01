@@ -1,4 +1,5 @@
-import { ArrowRight, MessageCircle, Compass, Building2, Award, Sparkles } from "lucide-react";
+import { ArrowRight, MessageCircle, Compass, Building2, Award, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useState } from "react";
 import heroImg from "@/assets/hero-space.jpg";
 
 const badges = [
@@ -8,7 +9,31 @@ const badges = [
   { icon: Building2, label: "No Renovation Approach" },
 ];
 
+const slides = [
+  { flag: "🇸🇬", city: "Singapore", type: "Residential Audit", img: heroImg, seed: "singapore" },
+  { flag: "🇲🇾", city: "Kuala Lumpur", type: "Commercial Audit", img: `https://picsum.photos/seed/kl-fs/1080/1350`, seed: "kl" },
+  { flag: "🇲🇾", city: "Penang", type: "Home Selection", img: `https://picsum.photos/seed/penang-fs/1080/1350`, seed: "penang" },
+  { flag: "🇲🇾", city: "Johor", type: "Residential Audit", img: `https://picsum.photos/seed/johor-fs/1080/1350`, seed: "johor" },
+  { flag: "🇹🇼", city: "Taipei", type: "Space Energy Audit", img: `https://picsum.photos/seed/taipei-fs/1080/1350`, seed: "taipei" },
+  { flag: "🇭🇰", city: "Hong Kong", type: "Commercial Audit", img: `https://picsum.photos/seed/hk-fs/1080/1350`, seed: "hk" },
+  { flag: "🇨🇳", city: "Guangzhou", type: "Residential Audit", img: `https://picsum.photos/seed/gz-fs/1080/1350`, seed: "gz" },
+  { flag: "🇫🇮", city: "Helsinki", type: "Remote Consultation", img: `https://picsum.photos/seed/helsinki-fs/1080/1350`, seed: "helsinki" },
+  { flag: "🇳🇴", city: "Stavanger", type: "Remote Consultation", img: `https://picsum.photos/seed/stavanger-fs/1080/1350`, seed: "stavanger" },
+];
+
 export function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((i) => (i + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, []);
+
+  const go = (dir: number) =>
+    setIndex((i) => (i + dir + slides.length) % slides.length);
+
   return (
     <section id="home" className="relative pt-32 pb-20 lg:pt-44 lg:pb-32 overflow-hidden">
       {/* Subtle background grain */}
@@ -73,16 +98,65 @@ export function Hero() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-brand/10 to-sage/20 blur-2xl" />
               <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-border/70 shadow-2xl shadow-brand/10">
-                <img
-                  src={heroImg}
-                  alt="Modern Singapore residence interior demonstrating spacious Feng Shui composition"
-                  width={1080}
-                  height={1350}
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/95 via-background/40 to-transparent p-6">
-                  <p className="text-xs uppercase tracking-[0.22em] text-muted-foreground">Featured Audit</p>
-                  <p className="mt-1 font-display text-lg text-foreground">River-facing Sky Residence · D10</p>
+                {slides.map((s, i) => (
+                  <img
+                    key={s.city + s.type}
+                    src={s.img}
+                    alt={`${s.city} — ${s.type}`}
+                    width={1080}
+                    height={1350}
+                    className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1200ms] ease-in-out ${
+                      i === index ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                ))}
+
+                {/* Bottom gradient for legibility */}
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background/60 to-transparent" />
+
+                {/* Location pill */}
+                <div
+                  key={index}
+                  className="absolute bottom-5 left-5 inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-background/40 backdrop-blur-md px-4 py-2 shadow-lg animate-fade-in"
+                >
+                  <span className="text-base leading-none">{slides[index].flag}</span>
+                  <div className="flex flex-col leading-tight">
+                    <span className="text-xs font-medium text-foreground">{slides[index].city}</span>
+                    <span className="text-[10px] font-light text-muted-foreground">{slides[index].type}</span>
+                  </div>
+                </div>
+
+                {/* Prev / Next arrows */}
+                <button
+                  type="button"
+                  aria-label="Previous slide"
+                  onClick={() => go(-1)}
+                  className="absolute top-1/2 left-3 -translate-y-1/2 grid h-9 w-9 place-items-center rounded-full border border-white/20 bg-background/40 backdrop-blur-md text-foreground transition hover:bg-background/70"
+                >
+                  <ChevronLeft size={16} />
+                </button>
+                <button
+                  type="button"
+                  aria-label="Next slide"
+                  onClick={() => go(1)}
+                  className="absolute top-1/2 right-3 -translate-y-1/2 grid h-9 w-9 place-items-center rounded-full border border-white/20 bg-background/40 backdrop-blur-md text-foreground transition hover:bg-background/70"
+                >
+                  <ChevronRight size={16} />
+                </button>
+
+                {/* Dots */}
+                <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-1.5">
+                  {slides.map((s, i) => (
+                    <button
+                      key={s.city + s.type}
+                      type="button"
+                      aria-label={`Go to slide ${i + 1}`}
+                      onClick={() => setIndex(i)}
+                      className={`h-1.5 rounded-full transition-all ${
+                        i === index ? "w-5 bg-foreground" : "w-1.5 bg-foreground/40 hover:bg-foreground/60"
+                      }`}
+                    />
+                  ))}
                 </div>
               </div>
 
