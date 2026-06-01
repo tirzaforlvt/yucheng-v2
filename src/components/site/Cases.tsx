@@ -148,15 +148,26 @@ export function Cases() {
                     </div>
                   ))}
                 </div>
+                <p className="mt-5 text-xs italic text-muted-foreground">No renovation required.</p>
               </div>
             </article>
           ))}
         </div>
 
+        <p className="mt-10 text-center text-xs italic text-muted-foreground">
+          Additional case studies available upon request. Client and company details are kept confidential.
+        </p>
+
         <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-px rounded-3xl overflow-hidden border border-border bg-border">
           {stats.map((s) => (
             <div key={s.label} className="bg-background p-8 lg:p-10 text-center">
-              <Counter to={s.value} suffix={s.suffix} />
+              {s.display ? (
+                <span className="font-display text-5xl lg:text-6xl font-bold text-foreground">
+                  {s.display}
+                </span>
+              ) : (
+                <Counter to={s.value} suffix={s.suffix} />
+              )}
               <p className="mt-3 text-sm text-muted-foreground">{s.label}</p>
             </div>
           ))}
