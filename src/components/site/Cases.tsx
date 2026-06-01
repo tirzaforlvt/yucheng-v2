@@ -5,36 +5,67 @@ import residential from "@/assets/case-residential.jpg";
 
 const cases = [
   {
-    img: residential,
-    tag: "Residential · 4-Room BTO",
-    title: "Home planning without renovation",
-    challenge: "Young family struggling with sleep and mood after move-in.",
-    approach: "Bedroom reorientation, headboard wall change, lighting calibration.",
-    outcome: "Restful sleep restored within 3 weeks. Zero hacking required.",
+    img: office,
+    tag: "Commercial · Car Rental Company, Singapore",
+    title: "Repositioning for Revenue Recovery",
+    challenge:
+      "A car rental business was experiencing a sustained drop in rental sales despite normal market conditions.",
+    approach:
+      "On-site audit identified energy stagnation at the foyer. Repositioned foyer décor and two office tables to improve Qi flow through the main entry and work areas.",
+    outcome:
+      "Rental sales increased within two weeks. Car utilisation rate stabilised at a consistently high level.",
   },
   {
     img: condo,
-    tag: "Pre-Purchase · Condominium",
-    title: "Condo selection for a young family",
-    challenge: "Shortlisting between three units in the same development.",
-    approach: "Facing analysis, mountain-water reading, BaZi alignment.",
-    outcome: "Selected unit appreciated above average and supported pregnancy plans.",
+    tag: "Commercial · Jewellery Company, Singapore",
+    title: "Activating a Stagnant New Premise",
+    challenge:
+      "Business momentum stalled after relocating to a new office. Enquiries dropped and closing rates declined.",
+    approach:
+      "Redesigned Qi flow at the foyer, activated the reputation energy sector, and improved the director's seat orientation.",
+    outcome:
+      "Enquiries increased. Closing rate improved with a notably higher proportion of clients who were less price-sensitive.",
   },
   {
     img: office,
-    tag: "Commercial · SME Office",
-    title: "Office layout optimisation",
-    challenge: "Director's focus dropping, key staff unsettled.",
-    approach: "Director-seat repositioning, finance corner activation, entry flow fix.",
-    outcome: "Two consecutive quarters of revenue growth; staff retention stabilised.",
+    tag: "Commercial · F&B, Singapore",
+    title: "From Vacant Unit to Thriving Restaurant",
+    challenge:
+      "Previous tenant had closed due to poor revenue. New operator needed a foundation that would support sustained footfall.",
+    approach:
+      "Planned the Qi flow through the restaurant and kitchen, and optimised customer seating positions relative to the space's energy map.",
+    outcome:
+      "Business has flourished since opening day. Unexpectedly strong walk-in traffic both day and night — consistently above the operator's projections.",
+  },
+  {
+    img: residential,
+    tag: "Residential · Tampines, Singapore",
+    title: "Restoring Calm to a Family Home",
+    challenge:
+      "Family experiencing disrupted sleep and low mood after moving into their flat.",
+    approach:
+      "Bedroom reorientation, headboard wall adjustment, and lighting calibration based on Period 9 Flying Stars analysis.",
+    outcome:
+      "Sleep quality restored within weeks. No hacking or renovation required.",
+  },
+  {
+    img: residential,
+    tag: "Residential · Remote Consultation, Stavanger Norway",
+    title: "Spatial Clarity Across Distance",
+    challenge:
+      "Client based in Norway needed a Feng Shui consultation for their home without an on-site visit being feasible.",
+    approach:
+      "Full remote consultation using detailed floor plan, facing direction, and move-in date. Flying Stars analysis conducted and recommendations delivered in writing.",
+    outcome:
+      "Client reported improved spatial clarity and energy flow following implementation of the recommendations.",
   },
 ];
 
 const stats = [
   { value: 800, suffix: "+", label: "Audits delivered" },
-  { value: 98, suffix: "%", label: "Client satisfaction" },
+  { value: 0, suffix: "", label: "Unresolved cases to date", display: "Zero" },
   { value: 15, suffix: "+", label: "Years in practice" },
-  { value: 0, suffix: "", label: "Major renovations required" },
+  { value: 2, suffix: "%", label: "Cases requiring major renovation", display: "<2%" },
 ];
 
 function Counter({ to, suffix }: { to: number; suffix: string }) {
