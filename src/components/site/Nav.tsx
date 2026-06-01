@@ -4,10 +4,11 @@ import logo from "@/assets/yc-logo.png";
 
 const links = [
   { href: "#home", label: "Home" },
-  { href: "#bio", label: "Bio" },
-  { href: "#services", label: "Services" },
+  { href: "#about", label: "About" },
+  { href: "#residential", label: "Residential" },
+  { href: "#commercial", label: "Commercial" },
   { href: "#cases", label: "Case Study" },
-  { href: "#tips", label: "Recommendations" },
+  { href: "#insights", label: "Insights" },
   { href: "#store", label: "Store" },
   { href: "#contact", label: "Contact" },
 ];

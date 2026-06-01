@@ -4,12 +4,13 @@ import logo from "@/assets/yc-logo.png";
 const cols = [
   { title: "Navigate", links: [
     { href: "#home", label: "Home" },
-    { href: "#bio", label: "Bio" },
-    { href: "#services", label: "Services" },
+    { href: "#about", label: "About" },
+    { href: "#residential", label: "Residential" },
     { href: "#cases", label: "Case Studies" },
   ]},
   { title: "Practice", links: [
-    { href: "#tips", label: "Recommendations" },
+    { href: "#commercial", label: "Commercial" },
+    { href: "#insights", label: "Insights" },
     { href: "#store", label: "Store" },
     { href: "#contact", label: "Contact" },
     { href: "https://wa.me/+6588539455", label: "WhatsApp" },

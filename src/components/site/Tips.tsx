@@ -26,7 +26,7 @@ const posts = [
 
 export function Tips() {
   return (
-    <section id="tips" className="py-24 lg:py-36">
+    <section id="insights" className="py-24 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div className="max-w-2xl">

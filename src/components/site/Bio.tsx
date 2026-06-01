@@ -9,7 +9,7 @@ const credentials = [
 
 export function Bio() {
   return (
-    <section id="bio" className="relative py-24 lg:py-36 bg-secondary/40">
+    <section id="about" className="relative py-24 lg:py-36 bg-secondary/40">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           <div className="lg:col-span-5">

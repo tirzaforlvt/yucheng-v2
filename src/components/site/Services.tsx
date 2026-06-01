@@ -35,7 +35,8 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-24 lg:py-36">
+    <section id="residential" className="py-24 lg:py-36">
+      <div id="commercial" className="scroll-mt-24" />
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
           <div className="max-w-2xl">
