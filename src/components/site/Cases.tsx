@@ -61,7 +61,7 @@ const cases = [
   },
 ];
 
-const stats = [
+const stats: { value: number; suffix: string; label: string; display?: string }[] = [
   { value: 800, suffix: "+", label: "Audits delivered" },
   { value: 0, suffix: "", label: "Unresolved cases to date", display: "Zero" },
   { value: 15, suffix: "+", label: "Years in practice" },
