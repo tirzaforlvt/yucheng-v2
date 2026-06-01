@@ -1,4 +1,4 @@
-import { MessageCircle, Instagram, BookOpen, FileText, Video } from "lucide-react";
+import { MessageCircle, Instagram, BookOpen, FileText, Video, Sofa, Bed } from "lucide-react";
 
 const products = [
   {
@@ -18,6 +18,18 @@ const products = [
     title: "Digital Consultation (60 min)",
     desc: "One-on-one video session for specific questions on home, business, or timing.",
     price: "S$220",
+  },
+  {
+    icon: Sofa,
+    title: "Living Room Fengshui Quick Guide",
+    desc: "Practical guide for optimising living room energy placement and flow.",
+    price: "Price on enquiry",
+  },
+  {
+    icon: Bed,
+    title: "Bedroom Fengshui Quick Guide",
+    desc: "Focused guide for bedroom placement, orientation, and sleep quality.",
+    price: "Price on enquiry",
   },
 ];
 
@@ -58,12 +70,14 @@ export function Store() {
               <h3 className="mt-6 font-display text-xl font-semibold text-foreground">{p.title}</h3>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed flex-1">{p.desc}</p>
               <div className="mt-6 flex items-center justify-between border-t border-border pt-5">
-                <span className="font-display text-2xl font-bold text-foreground">{p.price}</span>
+                <span className="font-display text-xl font-bold text-foreground">{p.price}</span>
                 <a
                   href="https://wa.me/+6588539455"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-brand"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-brand whitespace-nowrap"
                 >
-                  Order →
+                  Order via WhatsApp →
                 </a>
               </div>
             </article>
