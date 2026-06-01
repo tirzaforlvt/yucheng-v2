@@ -46,6 +46,13 @@ export function Bio() {
               </p>
             </div>
 
+            <div className="mt-6 inline-flex flex-wrap items-center gap-x-3 gap-y-1 rounded-full border border-border bg-background px-5 py-2.5 text-xs text-foreground">
+              <span className="font-display text-sm font-semibold text-brand">23,000+</span>
+              <span className="text-muted-foreground">followers across platforms</span>
+              <span className="text-muted-foreground/50">·</span>
+              <span className="text-muted-foreground">Available for remote consultations worldwide</span>
+            </div>
+
             {expanded && (
               <div className="mt-8 space-y-5 text-muted-foreground text-base lg:text-lg leading-relaxed max-w-2xl">
                 <p>

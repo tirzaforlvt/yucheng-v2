@@ -1,5 +1,6 @@
-import { MessageCircle, Instagram, Facebook } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import logo from "@/assets/yc-logo.png";
+import { socials } from "./socials";
 
 const cols = [
   { title: "Navigate", links: [
@@ -59,26 +60,30 @@ export function Footer() {
 
           <div className="lg:col-span-3">
             <p className="text-xs uppercase tracking-[0.22em] text-background/50">Connect</p>
-            <div className="mt-5 flex gap-3">
-              <a href="https://wa.me/+6588539455" className="grid h-10 w-10 place-items-center rounded-full border border-background/20 hover:bg-background hover:text-foreground transition-colors">
-                <MessageCircle size={16} />
-              </a>
-              <a href="https://www.instagram.com/yuchengfengshui" className="grid h-10 w-10 place-items-center rounded-full border border-background/20 hover:bg-background hover:text-foreground transition-colors">
-                <Instagram size={16} />
-              </a>
-              <a href="https://www.facebook.com/yuchengfengshui" className="grid h-10 w-10 place-items-center rounded-full border border-background/20 hover:bg-background hover:text-foreground transition-colors">
-                <Facebook size={16} />
-              </a>
+            <div className="mt-5 flex flex-wrap gap-3">
+              {socials.map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="grid h-10 w-10 place-items-center rounded-full border border-background/20 hover:bg-background hover:text-foreground transition-colors"
+                >
+                  <Icon width={16} height={16} />
+                </a>
+              ))}
             </div>
             <p className="mt-6 text-xs text-background/60 leading-relaxed">
               By appointment only.<br />
-              Singapore · Worldwide via video consultation.
+              Singapore · Worldwide via video consultation.<br />
+              yucheng.sg
             </p>
           </div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-3 text-xs text-background/60">
-          <p>© {new Date().getFullYear()} Yu Cheng Feng Shui · 玉成风水. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} yucheng.sg · Yu Cheng Feng Shui · 玉成风水. All rights reserved.</p>
           <p>Crafted with intent · Singapore</p>
         </div>
       </div>

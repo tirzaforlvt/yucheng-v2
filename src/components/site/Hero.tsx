@@ -9,16 +9,19 @@ const badges = [
   { icon: Building2, label: "No Renovation Approach" },
 ];
 
+const u = (id: string) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1080&h=1350&q=80`;
+
 const slides = [
-  { flag: "🇸🇬", city: "Singapore", type: "Residential Audit", img: heroImg, seed: "singapore" },
-  { flag: "🇲🇾", city: "Kuala Lumpur", type: "Commercial Audit", img: `https://picsum.photos/seed/kl-fs/1080/1350`, seed: "kl" },
-  { flag: "🇲🇾", city: "Penang", type: "Home Selection", img: `https://picsum.photos/seed/penang-fs/1080/1350`, seed: "penang" },
-  { flag: "🇲🇾", city: "Johor", type: "Residential Audit", img: `https://picsum.photos/seed/johor-fs/1080/1350`, seed: "johor" },
-  { flag: "🇹🇼", city: "Taipei", type: "Space Energy Audit", img: `https://picsum.photos/seed/taipei-fs/1080/1350`, seed: "taipei" },
-  { flag: "🇭🇰", city: "Hong Kong", type: "Commercial Audit", img: `https://picsum.photos/seed/hk-fs/1080/1350`, seed: "hk" },
-  { flag: "🇨🇳", city: "Guangzhou", type: "Residential Audit", img: `https://picsum.photos/seed/gz-fs/1080/1350`, seed: "gz" },
-  { flag: "🇫🇮", city: "Helsinki", type: "Remote Consultation", img: `https://picsum.photos/seed/helsinki-fs/1080/1350`, seed: "helsinki" },
-  { flag: "🇳🇴", city: "Stavanger", type: "Remote Consultation", img: `https://picsum.photos/seed/stavanger-fs/1080/1350`, seed: "stavanger" },
+  { flag: "🇸🇬", city: "Singapore", type: "Residential Audit", img: heroImg },
+  { flag: "🇲🇾", city: "Kuala Lumpur", type: "Commercial Audit", img: u("1497366216548-37526070297c") },
+  { flag: "🇲🇾", city: "Penang", type: "Home Selection", img: u("1505691938895-1758d7feb511") },
+  { flag: "🇲🇾", city: "Johor", type: "Residential Audit", img: u("1560448204-e02f11c3d0e2") },
+  { flag: "🇹🇼", city: "Taipei", type: "Space Energy Audit", img: u("1493809842364-78817add7ffb") },
+  { flag: "🇭🇰", city: "Hong Kong", type: "Commercial Audit", img: u("1497366811353-6870744d04b2") },
+  { flag: "🇨🇳", city: "Guangzhou", type: "Residential Audit", img: u("1600585154340-be6161a56a0c") },
+  { flag: "🇫🇮", city: "Helsinki", type: "Remote Consultation", img: u("1554995207-c18c203602cb") },
+  { flag: "🇳🇴", city: "Stavanger", type: "Remote Consultation", img: u("1513584684374-8bab748fbf90") },
 ];
 
 export function Hero() {
