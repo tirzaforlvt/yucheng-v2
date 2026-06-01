@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
-import { MessageCircle, Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Clock } from "lucide-react";
+import { socials } from "./socials";
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -31,7 +32,7 @@ export function Contact() {
             <div className="mt-10 space-y-4">
               {[
                 { icon: MessageCircle, label: "WhatsApp", value: "+65 8853 9455" },
-                { icon: Mail, label: "Email", value: "hello@yuchengfengshui.sg" },
+                { icon: Mail, label: "Email", value: "hello@yucheng.sg" },
                 { icon: MapPin, label: "Studio", value: "By appointment · Singapore" },
                 { icon: Clock, label: "Response", value: "Within 24 hours, weekdays" },
               ].map((c) => (
@@ -47,16 +48,19 @@ export function Contact() {
               ))}
             </div>
 
-            <div className="mt-10 flex gap-3">
-              <a href="https://wa.me/+6588539455" className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-sage hover:text-sage-foreground transition-colors">
-                <MessageCircle size={16} />
-              </a>
-              <a href="https://www.instagram.com/yuchengfengshui" className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-brand hover:text-brand transition-colors">
-                <Instagram size={16} />
-              </a>
-              <a href="https://www.facebook.com/yuchengfengshui" className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-brand hover:text-brand transition-colors">
-                <Facebook size={16} />
-              </a>
+            <div className="mt-10 flex flex-wrap gap-3">
+              {socials.map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="grid h-11 w-11 place-items-center rounded-full border border-border hover:border-brand hover:text-brand transition-colors"
+                >
+                  <Icon width={16} height={16} />
+                </a>
+              ))}
             </div>
           </div>
 
