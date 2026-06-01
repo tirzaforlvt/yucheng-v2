@@ -5,6 +5,7 @@ import { Bio } from "@/components/site/Bio";
 import { Services } from "@/components/site/Services";
 import { Cases } from "@/components/site/Cases";
 import { Testimonials } from "@/components/site/Testimonials";
+import { FAQ } from "@/components/site/FAQ";
 import { Tips } from "@/components/site/Tips";
 import { Store } from "@/components/site/Store";
 import { Contact } from "@/components/site/Contact";
