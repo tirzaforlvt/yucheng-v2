@@ -1,4 +1,13 @@
-import { ArrowRight, MessageCircle, Compass, Building2, Award, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  ArrowRight,
+  MessageCircle,
+  Compass,
+  Building2,
+  Award,
+  Sparkles,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import { useEffect, useState } from "react";
 import heroImg from "@/assets/hero-space.jpg";
 
@@ -9,8 +18,7 @@ const badges = [
   { icon: Building2, label: "No Renovation Approach" },
 ];
 
-const u = (id: string) =>
-  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1080&h=1350&q=80`;
+const u = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1080&h=1350&q=80`;
 
 const slides = [
   { flag: "🇸🇬", city: "Singapore", type: "Residential Audit", img: heroImg },
@@ -34,8 +42,7 @@ export function Hero() {
     return () => clearInterval(id);
   }, []);
 
-  const go = (dir: number) =>
-    setIndex((i) => (i + dir + slides.length) % slides.length);
+  const go = (dir: number) => setIndex((i) => (i + dir + slides.length) % slides.length);
 
   return (
     <section id="home" className="relative pt-32 pb-20 lg:pt-44 lg:pb-32 overflow-hidden">
@@ -59,9 +66,8 @@ export function Hero() {
             </h1>
 
             <p className="mt-7 max-w-xl text-lg text-muted-foreground leading-relaxed">
-              Helping homeowners and businesses make better property and space decisions
-              through practical Feng Shui strategies — without unnecessary renovations or
-              ornaments.
+              Helping homeowners and businesses make better property and space decisions through practical Feng Shui
+              strategies — without unnecessary renovations or ornaments.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3">
@@ -89,9 +95,7 @@ export function Hero() {
                   className="flex items-start gap-2.5 rounded-xl border border-border/70 bg-background/60 backdrop-blur px-3.5 py-3"
                 >
                   <b.icon size={16} className="mt-0.5 text-brand shrink-0" />
-                  <span className="text-xs font-medium text-foreground leading-snug">
-                    {b.label}
-                  </span>
+                  <span className="text-xs font-medium text-foreground leading-snug">{b.label}</span>
                 </div>
               ))}
             </div>
@@ -161,14 +165,6 @@ export function Hero() {
                     />
                   ))}
                 </div>
-              </div>
-
-              {/* Floating stat card */}
-              <div className="absolute -left-6 bottom-12 hidden md:block rounded-2xl border border-border bg-background/95 backdrop-blur p-5 shadow-xl shadow-foreground/5">
-                <p className="font-display text-3xl font-bold text-foreground">98%</p>
-                <p className="mt-1 text-xs text-muted-foreground max-w-[140px] leading-snug">
-                  client satisfaction across 800+ consultations
-                </p>
               </div>
             </div>
           </div>
