@@ -26,11 +26,11 @@ const posts = [
 
 export function Tips() {
   return (
-    <section id="tips" className="py-24 lg:py-36">
+    <section id="insights" className="py-24 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.22em] text-brand">— Recommendations</p>
+            <p className="text-xs uppercase tracking-[0.22em] text-brand">— Insights</p>
             <h2 className="mt-4 font-display font-bold text-foreground text-4xl lg:text-5xl leading-tight">
               Reading room.
             </h2>
