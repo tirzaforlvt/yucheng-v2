@@ -163,7 +163,13 @@ export function Hero() {
                 </div>
               </div>
 
-        
+              {/* Floating stat card */}
+              <div className="absolute -left-6 bottom-12 hidden md:block rounded-2xl border border-border bg-background/95 backdrop-blur p-5 shadow-xl shadow-foreground/5">
+                <p className="font-display text-3xl font-bold text-foreground">98%</p>
+                <p className="mt-1 text-xs text-muted-foreground max-w-[140px] leading-snug">
+                  client satisfaction across 800+ consultations
+                </p>
+              </div>
             </div>
           </div>
         </div>
