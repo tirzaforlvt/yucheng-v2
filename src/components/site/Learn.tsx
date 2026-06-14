@@ -54,7 +54,7 @@ return ( <section id="learn" className="py-24 lg:py-36 bg-secondary/40"> <div cl
 
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-6 py-3 text-sm font-medium text-black shadow-lg">
-              <Play size={14} fill="currentColor" />
+              <Play size={14} />
               Watch Featured Video
             </div>
           </div>
