@@ -33,17 +33,17 @@ export function Nav() {
         scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border/60" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+      <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-4 lg:px-10">
         <a href="#home" className="flex items-center" aria-label="Yu Cheng Feng Shui">
           <img src={logo} alt="Yu Cheng Feng Shui" className="h-16 lg:h-20 w-auto block" />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex flex-1 justify-center items-center gap-6 px-8">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="whitespace-nowrap text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {l.label}
             </a>
@@ -53,7 +53,7 @@ export function Nav() {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-all hover:bg-brand"
+            className="hidden md:inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background whitespace-nowrap"
           >
             Book Consultation
           </a>
