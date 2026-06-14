@@ -35,7 +35,7 @@ export function Nav() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <a href="#home" className="flex items-center" aria-label="Yu Cheng Feng Shui">
-          <img src={logo} alt="Yu Cheng Feng Shui" className="h-20 lg:h-24 w-auto object-contain" />
+          <img src={logo} alt="Yu Cheng Feng Shui" className="h-24 lg:h-32 w-auto block" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
