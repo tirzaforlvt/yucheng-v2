@@ -1,11 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import condo from "@/assets/case-condo.jpg";
-import office from "@/assets/case-office.jpg";
-import residential from "@/assets/case-residential.jpg";
+import sgOffice from "@/assets/case-sg-office.jpg";
+import sgCondo from "@/assets/case-sg-condo.jpg";
+import restaurant from "@/assets/case-restaurant.jpg";
+import sgLiving from "@/assets/case-sg-living.jpg";
+import floorplan from "@/assets/case-floorplan.jpg";
 
 const cases = [
   {
-    img: office,
+    img: sgOffice,
+    overlay: "Commercial Audit",
     tag: "Commercial · Car Rental Company, Singapore",
     title: "Repositioning for Revenue Recovery",
     challenge:
@@ -16,7 +19,8 @@ const cases = [
       "Rental sales increased within two weeks. Car utilisation rate stabilised at a consistently high level.",
   },
   {
-    img: condo,
+    img: sgCondo,
+    overlay: "Property Selection",
     tag: "Commercial · Jewellery Company, Singapore",
     title: "Activating a Stagnant New Premise",
     challenge:
@@ -27,7 +31,8 @@ const cases = [
       "Enquiries increased. Closing rate improved with a notably higher proportion of clients who were less price-sensitive.",
   },
   {
-    img: office,
+    img: restaurant,
+    overlay: "Restaurant Consultation",
     tag: "Commercial · F&B, Singapore",
     title: "From Vacant Unit to Thriving Restaurant",
     challenge:
@@ -38,7 +43,8 @@ const cases = [
       "Business has flourished since opening day. Unexpectedly strong walk-in traffic both day and night — consistently above the operator's projections.",
   },
   {
-    img: residential,
+    img: sgLiving,
+    overlay: "Residential Audit",
     tag: "Residential · Tampines, Singapore",
     title: "Restoring Calm to a Family Home",
     challenge:
@@ -49,7 +55,8 @@ const cases = [
       "Sleep quality restored within weeks. No hacking or renovation required.",
   },
   {
-    img: residential,
+    img: floorplan,
+    overlay: "Layout Planning",
     tag: "Residential · Remote Consultation, Stavanger Norway",
     title: "Spatial Clarity Across Distance",
     challenge:
@@ -120,7 +127,7 @@ export function Cases() {
               }`}
             >
               <div className="lg:col-span-5 [direction:ltr]">
-                <div className="aspect-[4/3] overflow-hidden rounded-2xl">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
                   <img
                     src={c.img}
                     alt={c.title}
@@ -129,6 +136,10 @@ export function Cases() {
                     height={768}
                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   />
+                  <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-sm border border-white/25 bg-background/55 backdrop-blur-md px-2.5 py-1 text-[10px] uppercase tracking-[0.22em] text-foreground">
+                    <span className="h-1 w-1 rounded-full bg-brand" />
+                    {c.overlay}
+                  </span>
                 </div>
               </div>
               <div className="lg:col-span-7 [direction:ltr]">
