@@ -14,7 +14,7 @@ import heroImg from "@/assets/hero-space.jpg";
 const badges = [
   { icon: Award, label: "15+ Years Experience" },
   { icon: Sparkles, label: "Period 9 Expert" },
-  { icon: Compass, label: "HK Grandmaster Disciple" },
+  { icon: Compass, label: "Classical Methodology" },
   { icon: Building2, label: "No Renovation Approach" },
 ];
 

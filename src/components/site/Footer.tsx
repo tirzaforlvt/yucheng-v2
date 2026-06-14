@@ -1,6 +1,8 @@
 import { MessageCircle } from "lucide-react";
-import logo from "@/assets/yc-logo.png";
+import logoAsset from "@/assets/yc-logo-new.png.asset.json";
 import { socials } from "./socials";
+
+const logo = logoAsset.url;
 
 const cols = [
   { title: "Navigate", links: [
@@ -11,7 +13,8 @@ const cols = [
   ]},
   { title: "Practice", links: [
     { href: "#commercial", label: "Commercial" },
-    { href: "#insights", label: "Insights" },
+    { href: "#learn", label: "Learn" },
+    { href: "#approaches", label: "Approaches" },
     { href: "#store", label: "Store" },
     { href: "#contact", label: "Contact" },
     { href: "https://wa.me/+6588539455", label: "WhatsApp" },
@@ -25,15 +28,16 @@ export function Footer() {
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <div className="flex items-center gap-4">
-              <img src={logo} alt="Yu Cheng Feng Shui" className="h-14 w-14 rounded-md object-contain" />
+              <img src={logo} alt="Yu Cheng Feng Shui" className="h-14 w-auto object-contain" />
               <div>
                 <p className="font-display text-xl font-bold">Yu Cheng Feng Shui</p>
                 <p className="text-xs uppercase tracking-[0.22em] text-background/60">玉成风水 · Singapore</p>
               </div>
             </div>
             <p className="mt-6 text-background/70 max-w-md leading-relaxed">
-              Modern Feng Shui rooted in authentic Hong Kong lineage. Practical advisory for
-              contemporary homes, offices, and property decisions in Singapore.
+              Practical Feng Shui consultancy for contemporary homes, offices, and property
+              decisions in Singapore — grounded in classical method, delivered without ornaments
+              or unnecessary renovation.
             </p>
             <a
               href="https://wa.me/+6588539455"

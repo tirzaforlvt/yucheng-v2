@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Practical Feng Shui for modern Singapore homes, offices and property decisions. 15+ years experience, Hong Kong grandmaster lineage, no renovations or ornaments required.",
+          "Practical Feng Shui for modern Singapore homes, offices and property decisions. 15+ years of practice, 800+ audits, no renovations or ornaments required.",
       },
       { property: "og:title", content: "Yu Cheng Feng Shui — Feng Shui for the Modern Era" },
       {
