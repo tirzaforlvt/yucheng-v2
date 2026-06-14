@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import logoAsset from "@/assets/yc-logo-horizontal.svg.asset.json";
+import logoAsset from "@/assets/yc-logo-new.png.asset.json";
 
 const logo = logoAsset.url;
 
@@ -30,18 +30,12 @@ export function Nav() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border/60"
-          : "bg-transparent"
+        scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border/60" : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <a href="#home" className="flex items-center" aria-label="Yu Cheng Feng Shui">
-          <img
-            src={logo}
-            alt="Yu Cheng Feng Shui"
-            className="h-20 lg:h-24 w-auto object-contain block"
-          />
+          <img src={logo} alt="Yu Cheng Feng Shui" className="h-20 lg:h-24 w-auto object-contain" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
