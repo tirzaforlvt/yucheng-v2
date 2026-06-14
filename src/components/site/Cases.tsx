@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import sgOffice from "@/assets/case-sg-office.jpg";
-import sgCondo from "@/assets/case-sg-condo.jpg";
-import restaurant from "@/assets/case-restaurant.jpg";
-import sgLiving from "@/assets/case-sg-living.jpg";
+import carRental from "@/assets/case-car-rental.jpg";
+import jewelry from "@/assets/case-jewelry.jpg";
+import restaurant from "@/assets/case-restaurant-busy.jpg";
+import sgCondoInterior from "@/assets/case-sg-condo-interior.jpg";
 import floorplan from "@/assets/case-floorplan.jpg";
 
 const cases = [
   {
-    img: sgOffice,
-    overlay: "Commercial Audit",
+    img: carRental,
+    overlay: "Commercial — Car Rental",
     tag: "Commercial · Car Rental Company, Singapore",
     title: "Repositioning for Revenue Recovery",
     challenge:
@@ -19,8 +19,8 @@ const cases = [
       "Rental sales increased within two weeks. Car utilisation rate stabilised at a consistently high level.",
   },
   {
-    img: sgCondo,
-    overlay: "Property Selection",
+    img: jewelry,
+    overlay: "Commercial — Jeweler",
     tag: "Commercial · Jewellery Company, Singapore",
     title: "Activating a Stagnant New Premise",
     challenge:
@@ -32,7 +32,7 @@ const cases = [
   },
   {
     img: restaurant,
-    overlay: "Restaurant Consultation",
+    overlay: "Commercial — F&B",
     tag: "Commercial · F&B, Singapore",
     title: "From Vacant Unit to Thriving Restaurant",
     challenge:
@@ -43,8 +43,8 @@ const cases = [
       "Business has flourished since opening day. Unexpectedly strong walk-in traffic both day and night — consistently above the operator's projections.",
   },
   {
-    img: sgLiving,
-    overlay: "Residential Audit",
+    img: sgCondoInterior,
+    overlay: "Residential — Singapore",
     tag: "Residential · Tampines, Singapore",
     title: "Restoring Calm to a Family Home",
     challenge:
@@ -56,7 +56,7 @@ const cases = [
   },
   {
     img: floorplan,
-    overlay: "Layout Planning",
+    overlay: "Residential — Remote Planning",
     tag: "Residential · Remote Consultation, Stavanger Norway",
     title: "Spatial Clarity Across Distance",
     challenge:
