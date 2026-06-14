@@ -6,41 +6,42 @@ import plan from "@/assets/tip-plan.jpg";
 const posts = [
   {
     img: compass,
-    tag: "Fundamentals",
-    title: "Period 9 Feng Shui, explained simply",
+    tag: "Methodology",
+    title: "How a Yu Cheng audit is structured, step by step",
     read: "6 min read",
   },
   {
     img: plan,
-    tag: "BTO",
-    title: "Five common BTO Feng Shui mistakes to avoid",
+    tag: "Framework",
+    title: "The assessment framework behind every property review",
     read: "5 min read",
   },
   {
     img: light,
-    tag: "Home",
-    title: "Choosing the right facing direction for your home",
+    tag: "Implementation",
+    title: "Translating Flying Stars analysis into practical changes",
     read: "7 min read",
   },
 ];
 
 export function Tips() {
   return (
-    <section id="insights" className="py-24 lg:py-36">
+    <section id="approaches" className="py-24 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.22em] text-brand">— Insights</p>
+            <p className="text-xs uppercase tracking-[0.22em] text-brand">— Approaches</p>
             <h2 className="mt-4 font-display font-bold text-foreground text-4xl lg:text-5xl leading-tight">
-              Reading room.
+              Method, framework, implementation.
             </h2>
             <p className="mt-5 text-muted-foreground text-base lg:text-lg max-w-xl leading-relaxed">
-              Plain-language essays on Period 9, BaZi, and everyday Feng Shui decisions —
-              written for homeowners, not practitioners.
+              How the practice works in real homes and businesses — the assessment
+              frameworks used, what each audit covers, and how recommendations are
+              translated into practical changes on the ground.
             </p>
           </div>
-          <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-foreground border-b border-foreground/40 hover:text-brand hover:border-brand transition-colors">
-            View all writings <ArrowUpRight size={14} />
+          <a href="#contact" className="inline-flex items-center gap-2 text-sm font-medium text-foreground border-b border-foreground/40 hover:text-brand hover:border-brand transition-colors">
+            Discuss your space <ArrowUpRight size={14} />
           </a>
         </div>
 

@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import logo from "@/assets/yc-logo.png";
+import logoAsset from "@/assets/yc-logo-new.png.asset.json";
+
+const logo = logoAsset.url;
 
 const links = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#residential", label: "Residential" },
   { href: "#commercial", label: "Commercial" },
-  { href: "#cases", label: "Case Study" },
-  { href: "#insights", label: "Insights" },
+  { href: "#cases", label: "Case Studies" },
+  { href: "#learn", label: "Learn" },
+  { href: "#approaches", label: "Approaches" },
   { href: "#store", label: "Store" },
   { href: "#contact", label: "Contact" },
 ];
@@ -37,7 +40,7 @@ export function Nav() {
           <img
             src={logo}
             alt="Yu Cheng Feng Shui"
-            className="h-12 w-12 rounded-md object-contain"
+            className="h-10 lg:h-12 w-auto object-contain"
           />
         </a>
 
