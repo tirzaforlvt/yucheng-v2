@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import logoAsset from "@/assets/yc-logo-new.png.asset.json";
+import logo from "@/assets/yc-logo-horizontal.png";
 
-const logo = logoAsset.url;
+
 
 const links = [
   { href: "#home", label: "Home" },
