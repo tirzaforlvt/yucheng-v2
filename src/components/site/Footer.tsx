@@ -1,5 +1,5 @@
 import { MessageCircle } from "lucide-react";
-import logoAsset from "@/assets/yc-logo-new.png.asset.json";
+import logoAsset from "@/assets/yc-logo-horizontal.svg.asset.json";
 import { socials } from "./socials";
 
 const logo = logoAsset.url;

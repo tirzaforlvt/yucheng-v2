@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import logoAsset from "@/assets/yc-logo-new.png.asset.json";
+import logoAsset from "@/assets/yc-logo-horizontal.svg.asset.json";
 
 const logo = logoAsset.url;
 
