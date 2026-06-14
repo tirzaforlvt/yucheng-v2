@@ -40,7 +40,7 @@ export function Nav() {
           <img
             src={logo}
             alt="Yu Cheng Feng Shui"
-            className="h-11 lg:h-14 w-auto object-contain block"
+            className="h-20 lg:h-24 w-auto object-contain block"
           />
         </a>
 
