@@ -7,6 +7,7 @@ import { Cases } from "@/components/site/Cases";
 import { Testimonials } from "@/components/site/Testimonials";
 import { FAQ } from "@/components/site/FAQ";
 import { Tips } from "@/components/site/Tips";
+import { Learn } from "@/components/site/Learn";
 import { Store } from "@/components/site/Store";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -40,6 +41,7 @@ function Index() {
         <Bio />
         <Services />
         <Cases />
+        <Learn />
         <Testimonials />
         <FAQ />
         <Tips />
